@@ -1,0 +1,108 @@
+body {
+  background-color: white; /* Dark Brown */
+  color: #422f29;            /* Cream */
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.container {
+  background: white;       /* Medium Brown */
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #422f29; /* Dark Brown shadow */
+  width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #5e473b;            /* Cream */
+}
+
+.input-container {
+  background: #EFEBE9;  
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: #f3e4dc;       /* Light Beige */
+  color: #835f55;            /* Dark Brown text */
+}
+
+.add-btn, .mic-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #946756;       /* Muted Brown */
+  color: white;            /* Cream text */
+  cursor: pointer;
+}
+
+.add-btn:hover, .mic-btn:hover {
+  background: #815241;       /* Richer Dark Brown */
+}
+
+.task-section {
+  margin-top: 20px;
+}
+
+.task-section h2 {
+  margin-bottom: 10px;
+  color: rgb(200, 159, 142);            /* Light Beige */
+  border-bottom: 1px solid #f9e2d8; /* Medium Brown */
+  padding-bottom: 5px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task {
+  background: #d8ab9d;       /* Light Beige task cards */
+  color: #80645c;            /* Dark Brown text */
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.task.completed {
+  background: #ba9080;       /* Slightly darker Beige for completed */
+}
+
+.task.removed {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.actions button {
+  background: transparent;
+  border: none;
+  color: #60443b;            /* Dark Brown */
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.complete-btn:hover {
+  color: #927559;            /* Keep Green tick for contrast */
+}
+
+.delete-btn:hover {
+  color: #FF6F61;            /* Soft Red */
+}

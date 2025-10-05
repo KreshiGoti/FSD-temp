@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kids Calculator</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Kids Calculator</h1>
+
+    <form id="calcForm" action="/calculate" method="post" novalidate>
+      <div class="row">
+        <label for="num1">First number</label>
+        <input id="num1" name="num1" type="number" inputmode="decimal" step="any" placeholder="e.g. 12.5" required>
+      </div>
+
+      <div class="row">
+        <label for="operation">Operation</label>
+        <select id="operation" name="operation" required>
+          <option value="add">➕ Add</option>
+          <option value="subtract">➖ Subtract</option>
+          <option value="multiply">✖ Multiply</option>
+          <option value="divide">➗ Divide</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="num2">Second number</label>
+        <input id="num2" name="num2" type="number" inputmode="decimal" step="any" placeholder="e.g. 3" required>
+      </div>
+
+      <p id="error" class="error" aria-live="polite"></p>
+      <button type="submit" class="btn">Calculate</button>
+    </form>
+
+    <footer class="hint">
+      Tip: You can type decimals (like 2.5). Letters will be checked and blocked.
+    </footer>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>

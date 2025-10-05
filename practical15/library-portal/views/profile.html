@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.onload = async function() {
+      const response = await fetch('/session-info');
+      if (response.ok) {
+        const data = await response.json();
+        document.getElementById('name').textContent = data.name;
+        document.getElementById('time').textContent = data.loginTime;
+      } else {
+        document.body.innerHTML = '<div class="container"><p>No active session. Please <a href="/login">login</a>.</p></div>';
+      }
+    };
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>User Profile</h1>
+    <div class="profile-info">
+      <p><strong>Name:</strong> <span id="name"></span></p>
+      <p><strong>Login Time:</strong> <span id="time"></span></p>
+    </div>
+    <button class="logout"><a href="/logout">Logout</a></button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Upload</title>
+  <style>
+    /* General page style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center container */
+.container {
+  max-width: 450px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* File input */
+input[type="file"] {
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="file"]:hover {
+  border-color: #4CAF50;
+}
+
+/* Button */
+button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* Error message */
+.error {
+  color: #d8000c;
+  background-color: #ffd2d2;
+  border: 1px solid #d8000c;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Upload Your Resume (PDF only)</h1>
+    <% if (error) { %>
+      <p class="error"><%= error %></p>
+    <% } %>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="resume" accept="application/pdf" required>
+      <br>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</body>
+</html>

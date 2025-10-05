@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log Viewer</title>
+</head>
+<body>
+  <h1>Available Logs</h1>
+  <% if (files.length === 0) { %>
+    <p>No log files found.</p>
+  <% } else { %>
+    <ul>
+      <% files.forEach(function(file) { %>
+        <li><a href="/view/<%= file %>"><%= file %></a></li>
+      <% }) %>
+    </ul>
+  <% } %>
+</body>
+</html>
