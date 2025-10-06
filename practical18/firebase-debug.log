@@ -1,0 +1,21 @@
+[debug] [2025-10-06T10:39:56.043Z] ----------------------------------------------------------------------
+[debug] [2025-10-06T10:39:56.046Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DHRUVI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-10-06T10:39:56.047Z] CLI Version:   14.18.0
+[debug] [2025-10-06T10:39:56.047Z] Platform:      win32
+[debug] [2025-10-06T10:39:56.047Z] Node Version:  v22.16.0
+[debug] [2025-10-06T10:39:56.047Z] Time:          Mon Oct 06 2025 16:09:56 GMT+0530 (India Standard Time)
+[debug] [2025-10-06T10:39:56.047Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-06T10:39:56.052Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-06T10:39:56.053Z] > authorizing via signed-in user (23dcs029@charusat.edu.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DHRUVI\Desktop\FSWT\task-manager-frontend
+

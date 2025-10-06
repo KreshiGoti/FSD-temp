@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+  min-height: 100vh;
+  margin: 0;
+
+  /* Center container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Task input section */
+.task-input {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-input input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.task-input button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #00b09b;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.task-input button:hover {
+  background: #00917a;
+}
+
+/* Task list */
+.task-list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Individual task card */
+.task {
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #f8f9fa;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task.Completed {
+  background: #d4edda;
+  border-color: #c3e6cb;
+}
+
+/* Task buttons */
+.task button {
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+  transition: all 0.3s;
+}
+
+.task button:nth-child(1) {
+  background: #007bff;
+  color: white;
+}
+
+.task button:nth-child(1):hover {
+  background: #0056b3;
+}
+
+.task button:nth-child(2) {
+  background: #dc3545;
+  color: white;
+}
+
+.task button:nth-child(2):hover {
+  background: #a71d2a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .task-input input,
+  .task-input button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .task button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
